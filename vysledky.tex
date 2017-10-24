@@ -1,1 +1,45 @@
 \section*{Výsledky měření}
+Nejprve jsme provedli energetickou kalibraci. Použili jsme tři známé peaky z gamma spektra $^{241}$Am: \SI{13.9}{\keV}, \SI{26.3}{\keV} a \SI{59.5}{\keV}. Další známý peak \SI{17.8}{\keV} jsme s novou kalibrací změřili na \SI{17.53}{\keV}, což nám dává představu o nejistotě měření energie.
+
+Měřili jsme rentgenové spektrum celkem 7 čistých prvků a 2 dvouprvkových slitin. V tabulce \ref{t:merenivzorky} jsou uvedené naměřené energie pozorovaných přechodů a jejich výtěžek. Prvky jsme identifikovali podle přiložené tabulky energií charakteristického rentgenového záření.
+
+U Cu jsme naměřili pouze jeden peak mezi K$\upalpha$ a K$\upbeta$, což odpovídá tomu, že jsou blízké a nedokážeme rozlišit. U všech ostatních prvků kromě Pb se nám podařilo rozlišit dva peaky, a to K$\upalpha$ a K$\upbeta$. U Pb jsme pozorovali pouze L$\upalpha$ a L$\upbeta$.
+
+\begin{tabulka}[htbp]
+\centering
+\begin{tabular}{c||ccccc|c}
+vzorek & energie (\si{\keV}) & FWHM (\si{\keV}) & net area & výtěžek (cps) & přechod & prvek \\ \hline\hline
+
+1 & 8,17 & 1,16 & \num{24205(251)} & \num{30,3(3)} & K$\upalpha$ a K$\upbeta$ & $_{29}$Cu \\  \hline
+\multirow{2}{*}{2} & 25,25 & 1,10 & \num{66467(331)} & \num{90,8(5)} & K$\upalpha$ & \multirow{2}{*}{$_{50}$Sn} \\
+ & 28,58 & 1,08 & \num{14171(190)} & \num{19,4(3)} & K$\upbeta$ &  \\ \hline
+\multirow{2}{*}{3} & 20,24 & 1,04 & \num{15116(171)} & \num{57,7(7)} & K$\upalpha$ & \multirow{2}{*}{$_{45}$Rh} \\ 
+ & 22,84 & 0,96 & \num{3120(103)} & 10,9(4) & K$\upbeta$ & \\ \hline
+\multirow{2}{*}{4} & 10,61 & 0,83 & \num{3556(112)} & 14,5(5) & L$\upalpha$ & \multirow{2}{*}{$_{82}$Pb} \\ 
+ & 12,67 & 0,90 & \num{3823(123)} & 15,6(5) & L$\upbeta$ & \\ \hline
+\multirow{2}{*}{11} & 23,16 & 1,02 & \num{17017(178)} & 83,4(9) & K$\upalpha$ & \multirow{2}{*}{$_{48}$Cd} \\ 
+ & 26,18 & 1,15 & \num{4489(111)} & 22,0(6) & K$\upbeta$ & \\ \hline
+\multirow{2}{*}{6} & 15,81 & 0,85 & \num{18116(249)} & 36,9(5) & K$\upalpha$ & \multirow{2}{*}{$_{40}$Zr} \\
+ & 17,67 & 0,62 & \num{1639(126)} & 3,3(3) & K$\upbeta$ &  \\ \hline
+\multirow{2}{*}{9} & 17,49 & 1,07 & \num{35230(274)} & 70,9(6) & K$\upalpha$ & \multirow{2}{*}{$_{42}$Mo} \\ 
+ & 19,70 & 0,8 & \num{3881(143)} & 7,8(3) & K$\upbeta$ &  \\ \hline\hline
+\multirow{3}{*}{5} & 8,43 & 1,28 & \num{3716(147)} & 5,5(2) & K$\upalpha$ a K$\upbeta$ & $_{29}$Cu \\
+ & 22,15 & 1,02 & \num{23575(246)} & 34,7(4) & K$\upalpha$ & \multirow{2}{*}{$_{47}$Ag} \\
+ & 25,03 & 1,03 & \num{7557(161)} & 11,2(3) & K$\upbeta$ & \\ \hline
+\multirow{4}{*}{13} & 10,58 & 1,03 & \num{5293(129)} & 13,6(4) & L$\upalpha$ & \multirow{2}{*}{$_{82}$Pb} \\ 
+ & 12,71 & 0,91 & \num{4834(148)} & 12,5(4) & L$\upbeta$ &  \\
+ & 25,26 & 1,08 & \num{11483(158)} & 29,6(4) & K$\upalpha$ & \multirow{2}{*}{$_{50}$Sn} \\
+ & 28,60 & 1,12 & \num{2958(94)} & 7,6(3) & K$\upbeta$ &  \\ 
+\end{tabular}
+\caption{Naměřené energetické přechody. V první části tabulky jsou čisté prvky, pod druhou tlustou čárou jsou slitiny.}
+\label{t:merenivzorky}
+\end{tabulka}
+
+Graf závislosti výtěžku na protonovém čísle pro přechod K$\upalpha$ (který byl u všech prvků silnější než K$\upbeta$)je v grafu \ref{g:vytezek}.
+
+\begin{graph}[htbp] 
+\centering
+%\input{graf.tex}
+\caption{Závislost výtěžku na protonovém čísle pro přechod K$\upalpha$.}
+\label{g:vytezek}
+\end{graph}
