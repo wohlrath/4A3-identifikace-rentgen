@@ -1,7 +1,7 @@
 \section*{Výsledky měření}
 Nejprve jsme provedli energetickou kalibraci. Použili jsme tři známé peaky z gamma spektra $^{241}$Am: \SI{13.9}{\keV}, \SI{26.3}{\keV} a \SI{59.5}{\keV}. Další známý peak \SI{17.8}{\keV} jsme s novou kalibrací změřili na \SI{17.53}{\keV}, což nám dává představu o nejistotě měření energie.
 
-Měřili jsme rentgenové spektrum celkem 7 čistých prvků a 2 dvouprvkových slitin. V tabulce \ref{t:merenivzorky} jsou uvedené naměřené energie pozorovaných přechodů a jejich výtěžek. Prvky jsme identifikovali podle přiložené tabulky energií charakteristického rentgenového záření.
+Měřili jsme rentgenové spektrum celkem 7 čistých prvků a 2 dvouprvkových slitin. V tabulce \ref{t:merenivzorky} jsou uvedené naměřené energie pozorovaných přechodů a jejich výtěžek. Relativní chyba výtěžku je stejná jako \emph{net area} Prvky jsme identifikovali podle přiložené tabulky energií charakteristického rentgenového záření.
 
 U Cu jsme naměřili pouze jeden peak mezi K$\upalpha$ a K$\upbeta$, což odpovídá tomu, že jsou blízké a nedokážeme rozlišit. U všech ostatních prvků kromě Pb se nám podařilo rozlišit dva peaky, a to K$\upalpha$ a K$\upbeta$. U Pb jsme pozorovali pouze L$\upalpha$ a L$\upbeta$.
 
@@ -35,11 +35,30 @@ vzorek & energie (\si{\keV}) & FWHM (\si{\keV}) & net area & výtěžek (cps) & 
 \label{t:merenivzorky}
 \end{tabulka}
 
-Graf závislosti výtěžku na protonovém čísle pro přechod K$\upalpha$ (který byl u všech prvků silnější než K$\upbeta$)je v grafu \ref{g:vytezek}.
+Graf závislosti výtěžku na protonovém čísle pro přechod K$\upalpha$ je v grafu \ref{g:vytezek}. Zahrnuli jsme i Cu, protože peak je mnohem blíže energii přechodu K$\upalpha$ než K$\upbeta$, což naznačuje, že se v celkovém výtěžku uplatňuje převážně. To se potvrdilo i u ostatních prvků, K$\upalpha$ je vždy několikanásobně silnější než K$\upbeta$.
+Nemáme žádný teoretický předpoklad na tvar této závislosti, proto jsme jej proložili polynomy prvního a druhého stupně
+\begin{equation}
+v_1(Z)=(-60+2,9Z)\text{cps} \,,
+\end{equation}
+\begin{equation}
+v_2(Z)=(139-7,6Z+0,13Z^2)\text{cps} \,.
+\end{equation}
+
+Oba fity se shodují ve výtěžku pro Ag přibližně \SI{75}{cps} a tuto hodnotu použijeme pro výpočet zastoupení prvků ve slitinách.
+Podle \eqref{e:konc} jsme určili podíly prvků ve slitině číslo 5
+\begin{equation}
+w_{Cu}^5=\SI{28(5)}{\percent} \,,\qquad \qquad w_{Ag}^5=\SI{72(5)}{\percent}
+\end{equation}
+a ve slitině číslo 13
+\begin{equation}
+w_{Pb}^{13}=\SI{74(5)}{\percent} \,,\qquad \qquad w_{Sn}^{13}=\SI{26(5)}{\percent} \,.
+\end{equation}
 
 \begin{graph}[htbp] 
 \centering
-%\input{graf.tex}
+\input{vytezek.tex}
 \caption{Závislost výtěžku na protonovém čísle pro přechod K$\upalpha$.}
 \label{g:vytezek}
 \end{graph}
+
+U radioaktivního vzorku jsme naměřili tři peaky v energiích \SI{30.9}{\keV}, \SI{35.1}{\keV} a \SI{80.9}{\keV}. První dva odpovídají spektrálním čarám Cs. Třetí peak program porovnáním s knihovnou vyhodnotil jako rozpad $^{133}$Ba.
